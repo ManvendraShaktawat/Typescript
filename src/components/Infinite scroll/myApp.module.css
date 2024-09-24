@@ -1,0 +1,17 @@
+.container {
+  padding: 40px;
+  width: 300px;
+
+  .listContainer {
+    list-style: none;
+    width: 100%;
+    max-height: 300px;
+    padding: 10px;
+    overflow-y: scroll;
+    border: 1px solid lightgray;
+
+    .loader {
+      text-align: center;
+    }
+  }
+}

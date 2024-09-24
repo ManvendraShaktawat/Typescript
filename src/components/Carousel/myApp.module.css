@@ -1,0 +1,38 @@
+.carousel {
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .carouselItemContainer {
+    .image {
+      width: 450px;
+      height: 300px;
+    }
+  }
+
+  .carouselActions {
+    .action {
+      width: 80px;
+      position: absolute;
+      top: 30%;
+      right: 0;
+      cursor: pointer;
+    }
+
+    .left {
+      transform: rotateY(180deg);
+      left: 0;
+    }
+  }
+
+  .indicators {
+    list-style: none;
+    display: flex;
+
+    input {
+      cursor: pointer;
+    }
+  }
+}

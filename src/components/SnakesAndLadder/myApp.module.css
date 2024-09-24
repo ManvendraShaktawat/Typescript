@@ -1,0 +1,137 @@
+.app {
+  padding: 50px;
+
+  .grid {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    display: inline-block;
+
+    .row {
+      display: flex;
+
+      .tile {
+        padding: 5px;
+        height: 50px;
+        width: 50px;
+        border: 1px solid lightgray;
+
+        .count {
+          font-size: 11px;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .players {
+          margin-top: 25%;
+          transform: translateY(-50%);
+          display: flex;
+          justify-content: space-around;
+
+          .player {
+            margin-right: 2px;
+            width: 16px;
+            padding: 1px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+          }
+        }
+
+        .red {
+          background-color: red;
+        }
+
+        .green {
+          background-color: green;
+        }
+
+        .blue {
+          background-color: blue;
+        }
+
+        .yellow {
+          background-color: yellow;
+        }
+      }
+
+      .finish {
+        background-color: lightgreen;
+      }
+
+      .snake {
+        background-color: lightcoral;
+      }
+
+      .ladder {
+        background-color: lightskyblue;
+      }
+    }
+  }
+
+  .start {
+    margin: 0;
+  }
+
+  .winner {
+    color: green;
+  }
+
+  .actionPanel {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+    .rollBtn {
+      margin-left: 20px;
+      color: white;
+      background-color: hsl(210, 77%, 46%);
+      border: none;
+      padding: 6px;
+      height: 32px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    .dice {
+      margin-left: 40px;
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      background-color: lightgrey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: 24px;
+    }
+  }
+}
+
+.loader {
+  width: 24px;
+  height: 24px;
+  border: 2px solid gray;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

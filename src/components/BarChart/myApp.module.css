@@ -1,0 +1,47 @@
+.container {
+  padding: 20px;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.drop {
+  margin-bottom: 50px;
+  background-color: aquamarine;
+  padding: 5px 10px;
+  border-radius: 10px;
+  width: fit-content;
+  cursor: grab;
+}
+
+.sort select {
+  margin-left: 20px;
+}
+
+.barContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style: none;
+  height: 400px;
+  padding: 0;
+}
+
+.bar {
+  width: 50px;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  background-color: grey;
+  color: white;
+  display: none;
+}
+
+.bar:hover .popup {
+  display: block;
+}
